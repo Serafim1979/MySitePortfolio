@@ -1,0 +1,45 @@
+.about-me {
+    width: 60%;
+    background-color: lavender;
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    padding: 2rem 0;
+    padding-left: 1.5rem;
+    flex-direction: column;
+}
+
+.hero-photo {
+    width: 40%;
+}
+
+.intro_text {
+    font-size: 1.2rem;
+    color: #a1a1a1;
+}
+
+.intro_title {
+    margin-bottom: .5rem;
+    font-size: 3.2rem;
+    line-height: 1.2;
+    color: #555454;
+    font-weight: 600;
+}
+
+.intro_subtitle {
+    font-size: 1.6rem;
+    color: #555454;
+    font-weight: 400;
+}
+
+.contacts {
+    margin-top: 2rem;
+}
+.contacts_link {
+    color: black;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}

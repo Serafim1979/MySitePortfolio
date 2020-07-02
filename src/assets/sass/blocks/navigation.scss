@@ -1,0 +1,23 @@
+.nav {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+
+
+.nav li a {
+    color: darkred;
+    text-decoration: none;
+    display: block;
+    padding: 20px;
+}
+
+.nav li :not(:first-child) {
+    margin-left: 50px;
+}
+
+.my_icon {
+    fill: rgb(61, 65, 65);
+}

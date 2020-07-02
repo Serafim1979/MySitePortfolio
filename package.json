@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/Serafim1979/MySitePortfolio#readme",
   "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.13.1",
     "browser-sync": "^2.26.7",
     "del": "^5.1.0",
     "gulp": "^4.0.2",
@@ -31,7 +32,8 @@
     "gulp-sass": "^4.1.0",
     "gulp-strip-css-comments": "^2.0.0",
     "gulp-uglify": "^3.0.2",
-    "panini": "^1.6.3"
+    "panini": "^1.6.3",
+    "reset-css": "^5.0.1"
   },
   "dependencies": {
     "js-yaml": "^3.14.0",

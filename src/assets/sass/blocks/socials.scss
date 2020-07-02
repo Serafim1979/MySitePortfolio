@@ -1,0 +1,50 @@
+.social {
+    display: flex;
+    align-items: center;
+}
+
+.soclial_text {
+    color: #a1a1a1;
+    font-size: .8rem;
+    font-weight: 600;
+    margin-right: 2rem;
+}
+
+.social_link {
+    margin-right: 1rem;
+    &:hover .social_icon{
+        fill: #363535;
+    }
+}
+
+.social_icon {
+    display: block;
+    width: 30px;
+    height: 30px;
+
+    fill: #ababab;
+    transition: fill .1s linear;
+
+    &--in {
+        width: 23px;
+        height: 23px;
+    }
+
+    &--insta {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.copyright_text {
+    display: flex;
+    color: #a1a1a1;
+    font-size: .8rem;
+    font-weight: 600;
+    margin-right: 2rem;
+}
