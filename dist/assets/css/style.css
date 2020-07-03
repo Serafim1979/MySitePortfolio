@@ -171,6 +171,11 @@ h1, h2, h3, h4, h5 {
     text-decoration: underline;
 }
 
+.responsive {
+    width: 100%;
+    height: auto;
+}
+
 .footer {
     flex-shrink: 0;
     height: 5rem;
@@ -217,6 +222,11 @@ h1, h2, h3, h4, h5 {
 .container {
     display: flex;
     align-items: center;
+    justify-content: space-evenly;
+}
+
+.copyright {
+    margin-right: 4rem;
 }
 
 .copyright_text {

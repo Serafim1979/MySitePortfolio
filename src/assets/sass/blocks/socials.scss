@@ -39,6 +39,11 @@
 .container {
     display: flex;
     align-items: center;
+    justify-content: space-evenly;
+}
+
+.copyright {
+    margin-right: 4rem;
 }
 
 .copyright_text {
