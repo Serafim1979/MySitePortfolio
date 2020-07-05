@@ -1,0 +1,31 @@
+@media (min-width: 1200 px) {
+
+}
+
+@media (min-width: 992 px) {
+    .main_content {
+        width: 960px;
+        height: 400px;
+    }
+}
+
+@media (min-width: 768 px) {
+   
+    
+}
+
+@media (min-width: 576 px) {
+
+    
+} 
+
+@media screen and (max-width: 1366px){
+    .main_content {
+        width: 960px;
+        height: 400px;
+    }
+
+    .header {
+        height: 8rem;
+    }
+}

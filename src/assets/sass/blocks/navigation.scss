@@ -5,13 +5,14 @@
     display: flex;
 }
 
-
-
 .nav li a {
-    color: darkred;
     text-decoration: none;
     display: block;
     padding: 20px;
+
+    &:hover .my_icon {
+        fill: lighten($color: rgb(61, 65, 65), $amount: 20%);
+    }
 }
 
 .nav li :not(:first-child) {

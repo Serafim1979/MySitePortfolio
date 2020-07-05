@@ -10,7 +10,12 @@
 }
 
 .hero-photo {
-    width: 40%;
+    position: relative;
+    width: 41%;
+    height: 100%;
+    overflow: hidden;
+    background-image: url('/assets/img/author.jpg');
+    background-size: cover;
 }
 
 .intro_text {

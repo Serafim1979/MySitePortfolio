@@ -77,28 +77,29 @@ h1, h2, h3, h4, h5 {
 }
 
 .wrapper {
-    min-height: 100vh;
-    display: flex;
-    overflow: hidden;
-    flex-direction: column;
+    height: 100vh;
+    min-height: 40.625rem;
+    position: relative;
     background-image: linear-gradient(to bottom, #b0c2d5, white 43.75rem);
 }
 
 .main_content {
-    width: 70%;
-    height: 25rem;
-    border-radius: .1rem;
-    margin: 0 auto 0;
-    background-color: #e5e7e7;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 75rem;
+    height: 31.25rem;
     display: flex;
-    flex-direction: row;
+    border-radius: .1rem;
+    background-color: #e5e7e7;
     box-shadow: 0.0625rem 0.0625rem 0.9375rem 0rem rgba(0, 0, 0, 0.5);
 }
 
 .header {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
     height: 10rem;
 }
 
@@ -110,10 +111,13 @@ h1, h2, h3, h4, h5 {
 }
 
 .nav li a {
-    color: darkred;
     text-decoration: none;
     display: block;
     padding: 1.25rem;
+}
+
+.nav li a:hover .my_icon {
+    fill: #6e7676;
 }
 
 .nav li :not(:first-child) {
@@ -136,7 +140,12 @@ h1, h2, h3, h4, h5 {
 }
 
 .hero-photo {
-    width: 40%;
+    position: relative;
+    width: 41%;
+    height: 100%;
+    overflow: hidden;
+    background-image: url("/assets/img/author.jpg");
+    background-size: cover;
 }
 
 .intro_text {
@@ -178,7 +187,8 @@ h1, h2, h3, h4, h5 {
 
 .footer {
     flex-shrink: 0;
-    height: 5rem;
+    height: 8rem;
+    align-items: flex-start;
 }
 
 .social {
@@ -235,4 +245,22 @@ h1, h2, h3, h4, h5 {
     font-size: .8rem;
     font-weight: 600;
     margin-right: 2rem;
+}
+
+@media (min-width: 992 px) {
+    .main_content {
+        width: 60rem;
+        height: 25rem;
+    }
+}
+
+@media screen and (max-width: 85.375rem) {
+    .main_content {
+        width: 60rem;
+        height: 25rem;
+    }
+
+    .header {
+        height: 8rem;
+    }
 }
