@@ -181,9 +181,10 @@ h1, h2, h3, h4, h5 {
     text-decoration: underline;
 }
 
-.responsive {
-    width: 100%;
-    height: auto;
+.text-hero {
+    font-size: 1.5rem;
+    color: #555454;
+    padding: 1rem;
 }
 
 .footer {
@@ -246,6 +247,43 @@ h1, h2, h3, h4, h5 {
     font-size: .8rem;
     font-weight: 600;
     margin-right: 2rem;
+}
+
+.main_content_form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 37.5rem;
+    display: flex;
+    border-radius: .1rem;
+    background-color: lavender;
+    box-shadow: 0.0625rem 0.0625rem 0.9375rem 0rem rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.form-wrapper {
+    display: flex;
+    flex-direction: column;
+    background-color: beige;
+    border-radius: 0.875rem;
+    padding: 2.5rem 2.1875rem;
+}
+
+.form-label {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 0.625rem;
+}
+
+.form-input {
+    height: 3.25rem;
+    background-color: #e3eaea;
+    border-radius: 0.5rem;
+    border: none;
 }
 
 @media (min-width: 992 px) {
