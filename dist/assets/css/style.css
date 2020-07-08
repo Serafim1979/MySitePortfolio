@@ -170,6 +170,7 @@ h1, h2, h3, h4, h5 {
 .contacts {
     color: #a1a1a1;
     margin-top: 2rem;
+    font-size: 1.875rem;
 }
 
 .contacts_link {
@@ -254,36 +255,115 @@ h1, h2, h3, h4, h5 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 37.5rem;
-    display: flex;
+    max-width: 37.5rem;
     border-radius: .1rem;
     background-color: lavender;
     box-shadow: 0.0625rem 0.0625rem 0.9375rem 0rem rgba(0, 0, 0, 0.5);
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 1rem;
+    padding: 1.25rem;
 }
 
-.form-wrapper {
-    display: flex;
-    flex-direction: column;
-    background-color: beige;
-    border-radius: 0.875rem;
-    padding: 2.5rem 2.1875rem;
-}
-
-.form-label {
+.contact_intro {
     font-size: 1.25rem;
     font-weight: 700;
-    margin-bottom: 0.625rem;
+    color: #888;
+    margin-bottom: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.25rem;
 }
 
-.form-input {
-    height: 3.25rem;
-    background-color: #e3eaea;
-    border-radius: 0.5rem;
+.name, .email, .message {
+    background: none;
     border: none;
+    outline: none;
+    border-bottom: 0.0625rem solid;
+    color: #888;
+    padding: 0.625rem 0.375rem;
+    font-size: 0.875rem;
+    margin-bottom: 2.5rem;
+}
+
+.name {
+    float: left;
+    width: 16.875rem;
+}
+
+.email {
+    float: right;
+    width: 16.875rem;
+}
+
+.message {
+    min-width: 100%;
+    max-width: 100%;
+}
+
+.btn_send {
+    background: none;
+    color: #888;
+    border: 0.0625rem solid #888;
+    padding: 0.75rem 2.5rem;
+    border-radius: 0.5rem;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    transition: 0.4s linear;
+}
+
+@media screen and (max-width: 37.5rem) {
+    .name, .email {
+        width: 100%;
+    }
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.3125rem;
+}
+
+form {
+    margin-top: 3.125rem;
+    transition: all 4s ease-in-out;
+}
+
+.form-control {
+    width: 37.5rem;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 0.0625rem solid gray;
+    color: #646262;
+    font-size: 1.125rem;
+    margin-bottom: 1rem;
+}
+
+input {
+    height: 2.8125rem;
+}
+
+form .submit {
+    background: #677574;
+    color: #bbbcbd;
+    font-size: 1.25rem;
+    font-weight: bold;
+    letter-spacing: 0.125rem;
+    height: 3.125rem;
+    margin-top: 1.25rem;
+}
+
+form .submit:hover {
+    background: #9ba7a6;
+    cursor: pointer;
+}
+
+.skills-bar {
+    position: relative;
+    width: 41%;
+    height: 100%;
+    overflow: hidden;
+    background-image: url("/assets/img/work_flow.jpg");
+    background-size: cover;
 }
 
 @media (min-width: 992 px) {

@@ -4,40 +4,115 @@
     left: 50%;
     transform: translate(-50%, -50%);
 
-    width: 600px;
+    max-width: 600px;
     // height: 600px;
 
-    display: flex;
+    // display: flex;
     border-radius: .1rem;
     background-color: lavender;
     box-shadow: 0.0625rem 0.0625rem 0.9375rem 0rem rgba(0, 0, 0, 0.5);
 
-    justify-content: center;
-    align-items: center;
+    // justify-content: center;
+    // align-items: center;
 
-    flex-direction: column;
-    padding: 1rem;
+    // flex-direction: column;
+    padding: 20px;
 }
 
-.form-wrapper {
-    display: flex;
-    flex-direction: column;
-    background-color: beige;
-    border-radius: 14px;
-    padding: 40px 35px;
-}
-
-.form-label {
+.contact_intro {
     font-size: 20px;
     font-weight: 700;
-    margin-bottom: 10px;
+    color: #888;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
 }
 
-.form-input {
-    height: 52px;
-    background-color: #e3eaea;
-    border-radius: 8px;
+.name, .email, .message {
+    background: none;
     border: none;
+    outline: none;
+    border-bottom: 1px solid;
+    color: #888;
+    padding: 10px 6px;
+    font-size: 14px;
+    margin-bottom: 40px;
+}
+
+.name {
+    float: left;
+    width: 270px;
+}
+
+.email {
+    float: right;
+    width: 270px;
+}
+
+.message {
+    min-width: 100%;
+    max-width: 100%;
+}
+
+.btn_send {
+    background: none;
+    color: #888;
+    border: 1px solid #888;
+    padding: 12px 40px;
+    border-radius: 8px;
+    text-transform: uppercase;
+    font-size: 14px;
+    transition: 0.4s linear;
+}
+
+@media screen and (max-width: 600px) {
+    .name, .email {
+        width: 100%;
+    }
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+form {
+    margin-top: 50px;
+    transition: all 4s ease-in-out;
+}
+
+.form-control {
+    width: 600px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid gray;
+    color: rgb(100, 98, 98);
+    font-size: 18px;
+    margin-bottom: 16px;
+}
+
+input {
+    height: 45px;
+}
+
+form .submit {
+    background: #677574;
+    // background-color: transparent;
+    color: rgb(187, 188, 189);
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    height: 50px;
+    margin-top: 20px;
+}
+
+form .submit:hover {
+    background: lighten($color: #677574, $amount: 20%);
+    cursor: pointer;
 }
 
 
